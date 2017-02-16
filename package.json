@@ -1,0 +1,28 @@
+{
+  "name": "where-is-my-wine",
+  "version": "1.0.0",
+  "description": "Où est mon vin ?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frechevillec/Hackathon-wine.git"
+  },
+  "keywords": [
+    "wine",
+    "map",
+    "address"
+  ],
+  "author": "The Pixeles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frechevillec/Hackathon-wine/issues"
+  },
+  "homepage": "https://github.com/frechevillec/Hackathon-wine#readme",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "leaflet": "^1.0.3"
+  }
+}
