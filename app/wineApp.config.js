@@ -19,6 +19,12 @@ angular.
         when('/wines/:wineId', {
           template: '<wine-detail></wine-detail>'
         }).
+        when('/owners', {
+          template: '<owner-list></owner-list>'
+        }).
+        when('/owners/:ownerId', {
+          template: '<owner-detail></owner-detail>'
+        }).
         otherwise('/markets');
     }
   ]);

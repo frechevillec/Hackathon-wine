@@ -1,4 +1,7 @@
-<p> {{$ctrl.owner.lastname}} </p>
-<p> {{$ctrl.owner.firstname}} </p>
-<p> {{$ctrl.owner.email}} </p>
- 
+<ul class="List">
+    <li ng-repeat="owner in $ctrl.owners | filter: $ctrl.query" class="Item">
+        <a class="Link" href="#!/owners/{{owner._id}}">
+            <h2 class="Item__title">{{owner.firstname}} {{owner.lastname}}</h2>
+        </a>
+    </li>
+</ul>

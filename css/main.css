@@ -178,6 +178,12 @@ body {
     text-decoration: none;
 }
 
+.Link__row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .Item {
     border-bottom: 2px solid #eaeaea;
     padding: 0 1rem;
@@ -194,8 +200,18 @@ body {
     text-transform: capitalize;
 }
 
+.Item__title--h3 {
+    margin: 2rem 0 1rem;
+    color: #444444;
+}
+
+.Item__title--h4 {
+    font-size: 1.8rem;
+}
+
 .Item__img {
-    max-width: 1rem;
+    height: 4rem;
+    margin: .8rem 1.4rem .8rem 0;
 }
 
 .Article {
@@ -205,11 +221,15 @@ body {
 .Article__title {
     color: #EE4035;
     text-transform: capitalize;
+    font-size: 1.8rem;
+    margin: 1.6rem 0 0 0;
 }
 
 .Article__desc {
     line-height: 1.6rem;
     color: #505050;
+    hyphens: auto;
+    text-align: justify;
 }
 
 .Article__img {

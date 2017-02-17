@@ -1,12 +1,12 @@
 <article class="Article">
-    <h2 class="Article__title">{{$ctrl.market.name}}</h2>
+    <h2 class="Article__title">{{$ctrl.owner.firstname}} {{$ctrl.owner.lastname}}</h2>
     <p class="Article__desc">
-        {{$ctrl.market.description}}
+        {{$ctrl.owner.email}}
     </p>
     <h3 class="Item__title--h3">Produits proposés</h3>
     <ul class="List">
-        <li class="Item" ng-repeat="wine in $ctrl.market.products">
-            <a class="Link Link__row" href="#!/wines/{{wine._id}}">
+        <li class="Item" ng-repeat="wine in $ctrl.products">
+            <a class="Link Link__row" ng-href="#!/wines/{{wine._id}}">
                 <figure class="Item__img">
                     <img ng-src="http://wine.wildcodeschool.fr{{wine.picture}}"/>
                 </figure>

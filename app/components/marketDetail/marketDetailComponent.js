@@ -10,15 +10,6 @@ angular.
 
         $http.get('http://wine.wildcodeschool.fr/api/v1/markets/' + $routeParams.marketId).then((response) => {
             this.market = response.data;
-
-            // console.log(this.market);
-            //
-            // this.marketInfos = [];
-            //
-            // this.marketInfos.push(this.market);
-            //
-            // this.marketInfos.map();
-
         })
       }
     ]
