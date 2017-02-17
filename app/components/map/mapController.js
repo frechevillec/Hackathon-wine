@@ -18,8 +18,6 @@ app.component("map", {
                 autoDiscover: true
             });
 
-            console.log(Number(this.markets[0].position.split(",")[0]));
-
             for(let i = 0; i < this.markets.length; i++) {
                 let marker = new L.marker([Number(this.markets[i].position.split(",")[0]), Number(this.markets[i].position.split(",")[1])]).bindPopup('<a class="Link" href="#!/markets/' + this.markets[i]._id + '"><h2 class="Item__title">' + this.markets[i].name +'</a>').addTo(map);
             }
