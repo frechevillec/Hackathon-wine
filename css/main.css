@@ -92,3 +92,6 @@ html {
 .Main, body, html {
     height: 100%;
 }
+element {
+  position: static;
+}
