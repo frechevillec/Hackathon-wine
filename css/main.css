@@ -130,6 +130,11 @@ body {
     border-bottom: 4px solid #fff;
 }
 
+.Navigation__link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .Search {
     position: absolute;
     top: 4.4rem;

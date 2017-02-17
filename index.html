@@ -14,36 +14,39 @@
         <header class="Header">
             <h1 class="Logo">Where is my Wine</h1>
             <nav class="Navigation">
-                <ul class="Navigation__list">
-                    <li class="Navigation__item Navigation__item--active">
-                        Commerces
+                <ul class="Navigation__list" ng-init="selectedTab = 'markets'">
+                    <li ng-class="{'Navigation__item--active':selectedTab === 'markets'}" class="Navigation__item" ng-click="selectedTab = 'markets'" >
+                        <a class="Navigation__link" href="#!/markets/">Commerces</a>
                     </li>
-                    <li class="Navigation__item">
-                        Vins
+                    <li ng-class="{'Navigation__item--active':selectedTab === 'wines'}" ng-click="selectedTab = 'wines'" class="Navigation__item">
+                        <a class="Navigation__link" href="#!/wines/">Vins</a>
                     </li>
-                    <li class="Navigation__item">
-                        Producteurs
+                    <li ng-class="{'Navigation__item--active':selectedTab === 'owners'}" ng-click="selectedTab = 'owners'" class="Navigation__item">
+                        <a class="Navigation__link" href="#!/owners/">Producteurs</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main class="Main">
+        <main class="Main" ng-view>
 
-            <map></map>
-            <market-list></market-list>
-            <wine-list></wine-list>
+            <!-- <map></map>
+            <market-list></market-list> -->
+
+            <!-- <wine-list></wine-list> -->
             <!-- <owner-list></owner-list> -->
         </main>
 
 
 
         <script src="/node_modules/angular/angular.js"></script>
+        <script src="/node_modules/angular-route/angular-route.js"></script>
         <script src="node_modules/leaflet/dist/leaflet.js"></script>
 
         <!-- App model  -->
 
         <!-- Angular  -->
         <script src="/app/wineApp.js"></script>
+        <script src="/app/wineApp.config.js"></script>
         <script src="/app/components/ownerList/ownerListModule.js"></script>
         <script src="/app/components/ownerList/ownerListComponent.js"></script>
         <script src="/app/components/marketList/marketListModule.js"></script>

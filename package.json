@@ -23,6 +23,7 @@
   "homepage": "https://github.com/frechevillec/Hackathon-wine#readme",
   "dependencies": {
     "angular": "^1.6.2",
+    "angular-route": "^1.6.2",
     "leaflet": "^1.0.3"
   }
 }

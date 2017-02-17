@@ -4,7 +4,7 @@
 angular.module('wineApp',[
 
 // ... qui dépend du module marketList
-'marketList', 'map', 'ownerList', 'wineList'
+'ngRoute', 'marketList', 'map', 'ownerList', 'wineList'
 
 
 ]);
