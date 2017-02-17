@@ -67,6 +67,8 @@ a {
 
 img {
     border: 0;
+    max-width: 100%;
+    height: 100%;
 }
 
 /**
@@ -172,6 +174,10 @@ body {
     padding: 0;
 }
 
+.Link {
+    text-decoration: none;
+}
+
 .Item {
     border-bottom: 2px solid #eaeaea;
     padding: 0 1rem;
@@ -185,4 +191,29 @@ body {
     font-size: 1.2rem;
     font-weight: 400;
     color: #505050;
+    text-transform: capitalize;
+}
+
+.Item__img {
+    max-width: 1rem;
+}
+
+.Article {
+    padding: 0 1rem;
+}
+
+.Article__title {
+    color: #EE4035;
+    text-transform: capitalize;
+}
+
+.Article__desc {
+    line-height: 1.6rem;
+    color: #505050;
+}
+
+.Article__img {
+    height: 14rem;
+    text-align: center;
+    margin: 2rem 0 0;
 }

@@ -1,9 +1,13 @@
-<ul>
-	<li ng-repeat="wine in $ctrl.wines">
-		<ul>
+<ul class="List">
+	<li ng-repeat="wine in $ctrl.wines" class="Item">
+		<!-- <ul> -->
 			<!-- <li>{{wine._id}}</li> -->
-			<li>{{wine.name}}</li>
-			<li>{{wine.description}}</li>
+			<!-- <figure class="Item__img">
+				<img ng-src="http://wine.wildcodeschool.fr/{{wine.picture}}"
+			</figure> -->
+			<a class="Link" href="#!/wines/{{wine._id}}">
+				<h2 class="Item__title">{{wine.name}}</h2>
+			</a>
 			<!-- <li><img ng-src="{{picture}}"></li> -->
 			<!-- <li ng-repeat="sub in data">
 				<ul>
@@ -12,6 +16,6 @@
 					<li>{{sub.email}}</li>
 				</ul>
 			</li> -->
-		</ul>
+		<!-- </ul> -->
 	</li>
 </ul>
