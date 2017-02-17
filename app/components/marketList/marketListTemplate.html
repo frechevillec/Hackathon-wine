@@ -1,5 +1,7 @@
-<ul>
-    <li ng-repeat="market in $ctrl.markets">
-        {{market.name}}
-    </li>
-</ul>
+<div class="Container">
+    <ul class="List">
+        <li ng-repeat="market in $ctrl.markets | filter: $ctrl.query" class="Item">
+            <h2 class="Item__title">{{market.name}}</h2>
+        </li>
+    </ul>
+</div>

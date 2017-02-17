@@ -2,12 +2,35 @@
 <html ng-app="wineApp">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
         <title></title>
     </head>
     <body>
-    	<map></map>
-        <market-list></market-list>
+        <header class="Header">
+            <h1 class="Logo">Where is my Wine</h1>
+            <nav class="Navigation">
+                <ul class="Navigation__list">
+                    <li class="Navigation__item Navigation__item--active">
+                        Commerces
+                    </li>
+                    <li class="Navigation__item">
+                        Vins
+                    </li>
+                    <li class="Navigation__item">
+                        Producteurs
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="Main">
+
+            <map></map>
+            <market-list></market-list>
+        </main>
 
         <script src="/node_modules/angular/angular.js"></script>
         <script src="node_modules/leaflet/dist/leaflet.js"></script>
@@ -20,6 +43,6 @@
         <script src="/app/components/marketList/marketListComponent.js"></script>
         <script src="/app/components/map/mapModule.js"></script>
         <script src="/app/components/map/mapController.js"></script>
-        
+
     </body>
 </html>
