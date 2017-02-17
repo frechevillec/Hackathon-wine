@@ -6,7 +6,7 @@
 app.component("map", {
    	templateUrl: "/app/components/map/mapTemplate.html",
     controller: function () {
-    	let mymap = L.map('map', {zoomControl: false}).setView([51.505, -0.09], 13);
+    	let mymap = L.map('map', {zoomControl: false}).setView([44.84, -0,5805], 13);
 
         L.control.zoom({
             position: 'bottomright'
