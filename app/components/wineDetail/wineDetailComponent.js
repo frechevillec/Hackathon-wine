@@ -4,7 +4,7 @@
 angular.
   module('wineDetail').
   component('wineDetail', {
-    templateUrl: '/app/components/wineDetail/wineDetailTemplate.html',
+    templateUrl: 'app/components/wineDetail/wineDetailTemplate.html',
     controller: ['$http', '$routeParams',
       function($http, $routeParams) {
 

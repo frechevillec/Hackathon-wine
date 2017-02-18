@@ -4,7 +4,7 @@
 angular.
   module('ownerDetail').
   component('ownerDetail', {
-    templateUrl: '/app/components/ownerDetail/ownerDetailTemplate.html',
+    templateUrl: 'app/components/ownerDetail/ownerDetailTemplate.html',
     controller: ['$http', '$routeParams',
       function($http, $routeParams) {
 

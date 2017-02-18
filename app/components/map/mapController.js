@@ -4,7 +4,7 @@
 
 // On crée notre component marketList et on lui associe son template et son controller
 app.component("map", {
-   	templateUrl: "/app/components/map/mapTemplate.html",
+   	templateUrl: "app/components/map/mapTemplate.html",
     controller: ['$http',
     function ($http) {
 

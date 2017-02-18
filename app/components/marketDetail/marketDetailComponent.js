@@ -4,7 +4,7 @@
 angular.
   module('marketDetail').
   component('marketDetail', {
-    templateUrl: '/app/components/marketDetail/marketDetailTemplate.html',
+    templateUrl: 'app/components/marketDetail/marketDetailTemplate.html',
     controller: ['$http', '$routeParams',
       function($http, $routeParams) {
 

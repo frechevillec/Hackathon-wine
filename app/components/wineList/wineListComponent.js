@@ -5,7 +5,7 @@
 // on crée notre component wineliste et on lui associe son template et son controller
 
 app.component("wineList", {
-	templateUrl: "/app/components/wineList/wineListTemplate.html",
+	templateUrl: "app/components/wineList/wineListTemplate.html",
 	controller: ["$http", function($http) {
 		let wineCollection;
 
